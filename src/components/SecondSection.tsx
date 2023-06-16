@@ -16,27 +16,29 @@ const benefits = [
 
 export const SecondSection: React.FC = () => {
   return (
-    <section className="lp-container mt-10 flex flex-col items-center justify-center text-white">
-      <h3 className="text-center font-bold text-cyan-500 sm:text-xl">
-        WHY BRIEFLY
-      </h3>
+    <section className="bg-zinc-800">
+      <section className="lp-container mt-10 flex flex-col items-center justify-center py-10 text-white">
+        <h3 className="text-center font-bold text-cyan-500 sm:text-xl">
+          WHY BRIEFLY
+        </h3>
 
-      <h1 className="mt-4 text-center text-2xl font-extrabold sm:text-3xl">
-        Short Form Content Agency
-      </h1>
+        <h1 className="mt-4 text-center text-2xl font-extrabold sm:text-3xl">
+          Short Form Content Agency
+        </h1>
 
-      <p className="mt-10 max-w-2xl text-center">
-        We take a tailored approach to meet your specific needs and maintain
-        open communication to ensure clarity and transparency throughout the
-        process. We clip your content and manage your accounts to gain
-        visibility through TikTok, Instagram Reels and Youtube Shorts.
-      </p>
+        <p className="mt-10 max-w-2xl text-center">
+          We take a tailored approach to meet your specific needs and maintain
+          open communication to ensure clarity and transparency throughout the
+          process. We clip your content and manage your accounts to gain
+          visibility through TikTok, Instagram Reels and Youtube Shorts.
+        </p>
 
-      <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-stretch sm:gap-8">
-        {benefits.map((benefit) => (
-          <Benefit key={benefit.title} {...benefit} />
-        ))}
-      </div>
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-stretch sm:gap-8">
+          {benefits.map((benefit) => (
+            <Benefit key={benefit.title} {...benefit} />
+          ))}
+        </div>
+      </section>
     </section>
   )
 }

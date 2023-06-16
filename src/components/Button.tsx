@@ -9,10 +9,10 @@ export const Button: React.FC<Props> = ({ children, variant, ...props }) => {
   return (
     <button
       className={clsx(
-        'rounded-lg border bg-cyan-900 px-3 py-2 font-bold transition-opacity hover:opacity-80 sm:px-4 md:px-6 md:py-3',
+        'rounded-md border bg-cyan-900 px-6 py-3 font-bold transition-opacity hover:opacity-80 md:px-8',
         {
           'border-white bg-white text-zinc-900': variant === 'primary',
-          'border-cyan-500 bg-zinc-900 text-white': variant === 'secondary',
+          'border-white bg-transparent text-white': variant === 'secondary',
         },
       )}
       {...props}
