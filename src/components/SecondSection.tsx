@@ -17,7 +17,7 @@ const benefits = [
 export const SecondSection: React.FC = () => {
   return (
     <section className="bg-zinc-800">
-      <section className="lp-container mt-10 flex flex-col items-center justify-center py-10 text-white">
+      <section className="lp-container flex flex-col items-center justify-center py-10 text-white">
         <h3 className="text-center font-bold text-cyan-500 sm:text-xl">
           WHY BRIEFLY
         </h3>
