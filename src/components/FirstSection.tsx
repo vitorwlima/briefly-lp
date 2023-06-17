@@ -1,4 +1,4 @@
-import { Button } from './Button'
+import { CallToActionButtons } from './CallToActionButtons'
 import { Header } from './Header'
 
 export const FirstSection: React.FC = () => {
@@ -19,10 +19,7 @@ export const FirstSection: React.FC = () => {
           growth today.
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-5 xs:flex-row">
-          <Button variant="primary">Try 30 days trial</Button>
-          <Button variant="secondary">Schedule a call</Button>
-        </div>
+        <CallToActionButtons />
       </section>
     </div>
   )
