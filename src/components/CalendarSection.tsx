@@ -2,7 +2,7 @@ import { InlineWidget } from 'react-calendly'
 
 export const CalendarSection: React.FC = () => {
   return (
-    <section className="bg-sky-600 p-2">
+    <section className="bg-sky-600 p-2" id="calendar">
       <InlineWidget
         url="https://calendly.com/vitor-briefly/30min"
         pageSettings={{

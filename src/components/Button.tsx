@@ -6,6 +6,12 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 }
 
 export const Button: React.FC<Props> = ({ children, variant, ...props }) => {
+  const handleClick = () => {
+    document?.getElementById('calendar')?.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <button
       className={clsx(
@@ -16,6 +22,7 @@ export const Button: React.FC<Props> = ({ children, variant, ...props }) => {
         },
       )}
       {...props}
+      onClick={handleClick}
     >
       {children}
     </button>
