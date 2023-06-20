@@ -2,20 +2,21 @@
 import '@fontsource/archivo';
 import '@fontsource/montserrat';
 import '@fontsource/nunito';
+
+import { SEO } from "astro-seo";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="description"
-			content="Grow your audience TODAY with a short form content strategy"
+		<SEO
+			title="Briefly | Short Form Content Agency"
+      description="Grow your audience TODAY with a short form content strategy"
+			charset='UTF-8'
 		/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Briefly | Short Form Content Agency</title>
 	</head>
 	<body class="bg-zinc-800 font-nunito min-h-screen">
 		<slot />
