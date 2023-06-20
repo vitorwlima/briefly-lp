@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         archivo: ['Archivo', 'sans-serif'],
         nunito: ['Nunito', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       screens: {
         xs: '420px',
